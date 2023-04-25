@@ -199,6 +199,23 @@ class TVCardServices extends LitElement {
                 };
                 break;
             }
+	    case "tvbox_xiaomi_remote_ir": {
+                this.keys = {
+		    "tvpower": {"icon": "mdi:television", "service": "select.select_option", "service_data": {"entity_id": "select.remote_ir_1629427609433722880", "option": "POWER"}},
+                    "power": {"icon": "mdi:power", "service": "select.select_option", "service_data": {"entity_id": "select.remote_ir_1615002030630944768", "option": "POWER"}},
+                    "volume_up": {"icon": "mdi:volume-plus", "service": "select.select_option", "service_data": {"entity_id": "select.remote_ir_1615002030630944768", "option": "VOL+"}},
+                    "volume_down": {"icon": "mdi:volume-minus", "service": "select.select_option", "service_data": {"entity_id": "select.remote_ir_1615002030630944768", "option": "VOL-"}},
+                    "return": {"icon": "mdi:arrow-u-left-top",  "service": "select.select_option", "service_data": {"entity_id": "select.remote_ir_1615002030630944768", "option": "BACK"}},
+                    "home": {"icon": "mdi:home", "service": "select.select_option", "service_data": {"entity_id": "select.remote_ir_1615002030630944768", "option": "HOMEPAGE"}},
+                    "up": {"icon": "mdi:chevron-up", "service": "select.select_option", "service_data": {"entity_id": "select.remote_ir_1615002030630944768", "option": "NAVIGATE_UP"}},
+                    "left": {"icon": "mdi:chevron-left", "service": "select.select_option", "service_data": {"entity_id": "select.remote_ir_1615002030630944768", "option": "NAVIGATE_LEFT"}},
+                    "enter": {"icon": "mdi:checkbox-blank-circle", "service": "select.select_option", "service_data": {"entity_id": "select.remote_ir_1615002030630944768", "option": "OK"}},
+                    "right": {"icon": "mdi:chevron-right", "service": "select.select_option", "service_data": {"entity_id": "select.remote_ir_1615002030630944768", "option": "NAVIGATE_RIGHT"}},
+                    "down": {"icon": "mdi:chevron-down", "service": "select.select_option", "service_data": {"entity_id": "select.remote_ir_1615002030630944768", "option": "NAVIGATE_DOWN"}},
+                    "menu": {"icon": "mdi:menu", "service": "select.select_option", "service_data": {"entity_id": "select.remote_ir_1615002030630944768", "option": "MENU"}},
+                };
+                break;
+            }
 	    case "leiniao": {
                 this.keys = {
                     "source": {"icon": "mdi:import", "service": "script.leiniao_tv_key_singal", "service_data": ""},
