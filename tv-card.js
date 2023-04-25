@@ -164,6 +164,40 @@ class TVCardServices extends LitElement {
                 };
                 break;
             }
+	    case "hisense_esphome_ir": {
+                this.keys = {
+                    "source": {"icon": "mdi:import", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:60690"}},
+                    "volume_up": {"icon": "mdi:volume-plus", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:47940"}},
+                    "volume_down": {"icon": "mdi:volume-minus", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:48195"}},
+                    "return": {"icon": "mdi:arrow-u-left-top",  "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:46920"}},
+                    "home": {"icon": "mdi:home", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:27540"}},
+                    "up": {"icon": "mdi:chevron-up", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:59670"}},
+                    "left": {"icon": "mdi:chevron-left", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:58905"}},
+                    "enter": {"icon": "mdi:checkbox-blank-circle", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:59925"}},
+                    "right": {"icon": "mdi:chevron-right", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:59160"}},
+                    "down": {"icon": "mdi:chevron-down", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:59415"}},
+                    "settings": {"icon": "mdi:cog", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:61455"}},
+		    "menu": {"icon": "mdi:cog", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:60180"}},
+                };
+                break;
+            }
+	    case "leiniao": {
+                this.keys = {
+                    "source": {"icon": "mdi:import", "service": "script.leiniao_tv_key_singal", "service_data": ""},
+                    "volume_up": {"icon": "mdi:volume-plus", "service": "script.leiniao_tv_key_vol_up", "service_data": ""},
+                    "volume_down": {"icon": "mdi:volume-minus", "service": "script.leiniao_tv_key_vol_down", "service_data": ""},
+                    "return": {"icon": "mdi:arrow-u-left-top",  "service": "script.leiniao_tv_key_back", "service_data": ""},
+                    "home": {"icon": "mdi:home", "service": "script.leiniao_tv_key_home", "service_data": ""},
+                    "up": {"icon": "mdi:chevron-up", "service": "script.leiniao_tv_key_up", "service_data": ""},
+                    "left": {"icon": "mdi:chevron-left", "service": "script.leiniao_tv_key_left", "service_data": ""},
+                    "enter": {"icon": "mdi:checkbox-blank-circle", "service": "script.leiniao_tv_key_enter", "service_data": ""},
+                    "right": {"icon": "mdi:chevron-right", "service": "script.leiniao_tv_key_right", "service_data": ""},
+                    "down": {"icon": "mdi:chevron-down", "service": "script.leiniao_tv_key_down", "service_data": ""},
+                    "settings": {"icon": "mdi:cog", "service": "script.leiniao_tv_key_setting", "service_data": ""},
+		    "menu": {"icon": "mdi:cog", "service": "script.leiniao_tv_key_menu", "service_data": ""},
+                };
+                break;
+            }
             case "samsungtv":
             default: {
                 this.keys = {
