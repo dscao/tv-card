@@ -166,7 +166,7 @@ class TVCardServices extends LitElement {
             }
 	    case "hisense_esphome_ir": {
                 this.keys = {
-		    "power": {"icon": "mdi:import", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:61965"}},
+		    "power": {"icon": "mdi:power", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:61965"}},
                     "source": {"icon": "mdi:import", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:60690"}},
                     "volume_up": {"icon": "mdi:volume-plus", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:47940"}},
                     "volume_down": {"icon": "mdi:volume-minus", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:48195"}},
@@ -178,7 +178,7 @@ class TVCardServices extends LitElement {
                     "right": {"icon": "mdi:chevron-right", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:59160"}},
                     "down": {"icon": "mdi:chevron-down", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:59415"}},
                     "settings": {"icon": "mdi:cog", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:61455"}},
-		    "menu": {"icon": "mdi:cog", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:60180"}},
+		    "menu": {"icon": "mdi:menu", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:60180"}},
                 };
                 break;
             }
