@@ -164,7 +164,7 @@ class TVCardServices extends LitElement {
                 };
                 break;
             }
-	    case "hisense_esphome_ir": {
+	    case "hisense_esphome_tuya_ir": {
                 this.keys = {
                     "power": {"icon": "mdi:power", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:61965"}},
                     "source": {"icon": "mdi:import", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:60690"}},
@@ -180,6 +180,22 @@ class TVCardServices extends LitElement {
                     "down": {"icon": "mdi:chevron-down", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:59415"}},
                     "settings": {"icon": "mdi:cog", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:61455"}},
                     "menu": {"icon": "mdi:menu", "service": "esphome.tuya_ir_4bcd14_transmit", "service_data": {"code": "48896:60180"}},
+                };
+                break;
+            }			
+            case "tvbox_esphome_tuya_ir": {
+                this.keys = {
+                    "power": {"icon": "mdi:power", "service": "esphome.tuya_ir_3530b5_transmit", "service_data": {"code": "56610:9180"}},
+                    "volume_up": {"icon": "mdi:volume-plus", "service": "esphome.tuya_ir_3530b5_transmit", "service_data": {"code": "56610:32640"}},
+                    "volume_down": {"icon": "mdi:volume-minus", "service": "esphome.tuya_ir_3530b5_transmit", "service_data": {"code": "56610:32385"}},
+                    "return": {"icon": "mdi:arrow-u-left-top",  "service": "esphome.tuya_ir_3530b5_transmit", "service_data": {"code": "56610:27285"}},
+                    "home": {"icon": "mdi:home", "service": "esphome.tuya_ir_3530b5_transmit", "service_data": {"code": "56610:30600"}},
+                    "up": {"icon": "mdi:chevron-up", "service": "esphome.tuya_ir_3530b5_transmit", "service_data": {"code": "56610:13770"}},
+                    "left": {"icon": "mdi:chevron-left", "service": "esphome.tuya_ir_3530b5_transmit", "service_data": {"code": "56610:26265"}},
+                    "enter": {"icon": "mdi:checkbox-blank-circle", "service": "esphome.tuya_ir_3530b5_transmit", "service_data": {"code": "56610:12750"}},
+                    "right": {"icon": "mdi:chevron-right", "service": "esphome.tuya_ir_3530b5_transmit", "service_data": {"code": "56610:16065"}},
+                    "down": {"icon": "mdi:chevron-down", "service": "esphome.tuya_ir_3530b5_transmit", "service_data": {"code": "56610:11730"}},
+                    "menu": {"icon": "mdi:menu", "service": "esphome.tuya_ir_3530b5_transmit", "service_data": {"code": "56610:32130"}},
                 };
                 break;
             }
